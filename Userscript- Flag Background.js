@@ -1,13 +1,15 @@
 // ==UserScript==
 // @name         Duolingo Flag background
 // @namespace   a34c0ac7aca179b6312214a6e1697b5a
-// @description  Adds more duo to the website!
+// @description  Adds more duo to the website, so that it doesn't seem as boring when you're trying to maintain your streak!
 // @author       Victor Williams
 // @match        *://www.duolingo.com/*
 // @grant        none
 // @copyright    2016, Victor Williams
 // @updateURL   https://monkeyguts.com/828.meta.js?c
 // @downloadURL https://monkeyguts.com/828.user.js?c
+//FEEL FREE TO ADD TO THIS IF YOU WANT 
+//DUOLINGO NEEDS TO BE FUN
 // ==/UserScript==
 function doFlag(){
     var languagestring = duo.user.get("learning_language");
