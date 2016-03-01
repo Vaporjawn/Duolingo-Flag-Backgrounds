@@ -1,0 +1,24 @@
+{
+"name": "Duolingo Flag Backgrounds",
+"version": "0.1",
+"homepage_url": "http://devpost.com/software/duolingo-flag-backgrounds#",
+"description": "A Chrome Extension that Creates Flag Backgrounds for Duolingo Language Learners",
+"icons": {
+
+},
+"browser_action": {
+	"default_icon": "",
+	"default_title" "Duolingo Flag Backgrounds"
+},
+"permissions": [
+	"background"
+	"https://www.duolingo.com/"
+	"http://www.duolingo.com/"
+],
+"background":{
+	"scripts": ["background.js", "Userscript- Flag Background"],
+	"persistent": true
+},
+"manifest_version": 2
+
+}
