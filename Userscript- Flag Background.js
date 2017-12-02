@@ -9,8 +9,6 @@
 // @grant        GM_addStyle
 // ==/UserScript==
 // 
-
-//HACKY HACK USE AS REFERENCE TO FIX ORIGINAL
 ;var loc = window.location.pathname;
 var languagestring = window.location.pathname.split("/").slice( 2, 3 ).join("/");
 //GM_addStyle("._3giip, ._3PBCS{background:url(http://i.imgur.com/RqTOULB.jpg);background-size:100%;background-repeat:no-repeat;background-attachment:fixed}")
@@ -102,3 +100,17 @@ var languagestring = window.location.pathname.split("/").slice( 2, 3 ).join("/")
     }
   GM_addStyle(".gr__duolingo_com, body, body:first-child, ._3MLiB, ._3giip, ._3PBCS{background:url("+backgroundurl+");background-size:100%;background-repeat:no-repeat;background-attachment:fixed}")
 //GM_addStyle("._3giip, ._3PBCS{background:url(http://i.imgur.com/RqTOULB.jpg);background-size:100%;background-repeat:no-repeat;background-attachment:fixed}")
+//
+GM_addStyle(".nav-footer{text-shadow:1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000");
+GM_addStyle(".nav-footer a{color:white");
+    //$("#app").css("background", "url('http://i.imgur.com/W6psVNL.png') no-repeat bottom center fixed");
+    //
+//write this in english
+GM_addStyle("._1Zqmf{text-shadow:1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000");
+GM_addStyle("._38VWB{text-shadow:1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000");
+//beginner card
+GM_addStyle(".a-Y8L{text-shadow:1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000");
+//footer
+GM_addStyle("._3GXmV, ._1sntG{background:none");
+//mark all correct answers
+GM_addStyle(".maOx8, ._2hYEZ{text-shadow:1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000");
