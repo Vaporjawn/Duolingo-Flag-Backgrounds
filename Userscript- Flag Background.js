@@ -111,6 +111,7 @@ GM_addStyle("._38VWB{text-shadow:1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #0
 //beginner card
 GM_addStyle(".a-Y8L{text-shadow:1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000");
 //footer
-GM_addStyle("._3GXmV, ._1sntG{background:none");
+//GM_addStyle("._3GXmV, ._1sntG{background:none");
+GM_addStyle("._3GXmV{background:none"); //_3uFh7 _3BtZs _1sntG
 //mark all correct answers
 GM_addStyle(".maOx8, ._2hYEZ{text-shadow:1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000");
