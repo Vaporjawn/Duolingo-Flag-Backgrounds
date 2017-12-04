@@ -9,8 +9,16 @@
 // @grant        GM_addStyle
 // ==/UserScript==
 // 
-;var loc = window.location.pathname;
+
+//HACKY HACK USE AS REFERENCE TO FIX ORIGINAL
+
+var uiLanguage = duo.uiLanguage;
+var fromLanguage = userINFO.fromLanguage;
+//var toLanguage = userINFO.toLanguage; y u no exist‽
+//var languagestring = duo.user.get("learning_language");
+//var loc = window.location.pathname;
 var languagestring = window.location.pathname.split("/").slice( 2, 3 ).join("/");
+
 //GM_addStyle("._3giip, ._3PBCS{background:url(http://i.imgur.com/RqTOULB.jpg);background-size:100%;background-repeat:no-repeat;background-attachment:fixed}")
 	var backgroundurl = "notset";
     switch(languagestring){
@@ -115,3 +123,7 @@ GM_addStyle(".a-Y8L{text-shadow:1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #00
 GM_addStyle("._3GXmV{background:none"); //_3uFh7 _3BtZs _1sntG
 //mark all correct answers
 GM_addStyle(".maOx8, ._2hYEZ{text-shadow:1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000");
+
+//nvm on this one, short flags don't fill to bottom
+//home page underfooter with wide window: <div data-reactroot="">
+GM_addStyle("body div div("+backgroundurl+");background-size:100%;background-repeat:no-repeat;background-attachment:fixed}")
