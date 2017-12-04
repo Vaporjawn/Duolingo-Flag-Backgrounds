@@ -12,12 +12,15 @@
 
 //HACKY HACK USE AS REFERENCE TO FIX ORIGINAL
 
+/*
 var uiLanguage = duo.uiLanguage;
 var fromLanguage = userINFO.fromLanguage;
 //var toLanguage = userINFO.toLanguage; y u no exist‽
 //var languagestring = duo.user.get("learning_language");
 //var loc = window.location.pathname;
 var languagestring = window.location.pathname.split("/").slice( 2, 3 ).join("/");
+*/
+var languagestring = JSON.parse(localStorage.getItem("duo.state")).user.learningLanguage;
 
 //GM_addStyle("._3giip, ._3PBCS{background:url(http://i.imgur.com/RqTOULB.jpg);background-size:100%;background-repeat:no-repeat;background-attachment:fixed}")
 	var backgroundurl = "notset";
