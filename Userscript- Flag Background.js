@@ -100,6 +100,12 @@ var languagestring = JSON.parse(localStorage.getItem('duo.state')).user.learning
             // Icelandic flag
             backgroundurl = "http://i.imgur.com/o8kcT4L.jpg";
 			break;
+        case "ar":
+            // Palestinian flag
+            backgroundurl = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2bf3899e-48a5-412e-95c6-fe219464eb57/d1tf8um-7b09252c-3e17-4fb5-b1ce-42df4746bd34.jpg/v1/fill/w_900,h_598,q_75,strp/palestine_grungy_flag_by_think0_d1tf8um-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTk4IiwicGF0aCI6IlwvZlwvMmJmMzg5OWUtNDhhNS00MTJlLTk1YzYtZmUyMTk0NjRlYjU3XC9kMXRmOHVtLTdiMDkyNTJjLTNlMTctNGZiNS1iMWNlLTQyZGY0NzQ2YmQzNC5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.aKffWoBBoA82u3XGhq1CRo8-s2He0DRiXyxiJnskFNY";
+            // Saudia Arabia
+            backgroundurl = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2bf3899e-48a5-412e-95c6-fe219464eb57/d1tnilc-70340cf2-af27-45e3-a511-65230d6b770c.jpg/v1/fill/w_1095,h_730,q_70,strp/saudi_arabia_grungy_flag_by_think0_d1tnilc-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA2NyIsInBhdGgiOiJcL2ZcLzJiZjM4OTllLTQ4YTUtNDEyZS05NWM2LWZlMjE5NDY0ZWI1N1wvZDF0bmlsYy03MDM0MGNmMi1hZjI3LTQ1ZTMtYTUxMS02NTIzMGQ2Yjc3MGMuanBnIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.aDPFeNNYJPbwnKWN2eBhU2iw9T4nia0r5q7L4NZviBA";
+			break;
         case "en":
             // American flag
             backgroundurl = "http://i.imgur.com/3KI66sY.jpg";
