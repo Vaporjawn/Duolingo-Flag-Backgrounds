@@ -114,6 +114,10 @@ var languagestring = JSON.parse(localStorage.getItem('duo.state')).user.learning
             // Korean flag
             backgroundurl = "https://pre00.deviantart.net/d168/th/pre/i/2009/041/d/b/south_korea_grunge_flag_by_think0.jpg";
 			break;
+        case "ja":
+            // Japanese flag
+            backgroundurl = "https://img01.deviantart.net/b3f0/i/2010/331/c/4/japan_grunge_flag_by_think0-d1urafh.jpg";
+			break;
         case "en":
             // American flag
             backgroundurl = "http://i.imgur.com/3KI66sY.jpg";
