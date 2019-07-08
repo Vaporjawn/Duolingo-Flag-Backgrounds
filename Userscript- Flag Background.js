@@ -19,9 +19,10 @@ var fromLanguage = userINFO.fromLanguage;
 //var languagestring = duo.user.get("learning_language");
 //var loc = window.location.pathname;
 */
-var languagestring = JSON.parse(localStorage.getItem('duo.state')).user.learningLanguage || JSON.parse(GM.getValue('duo.state')).user.learningLanguage || window.location.pathname.split("/").slice( 2, 3 ).join("/");
 
 //GM_addStyle("._3giip, ._3PBCS{background:url(http://i.imgur.com/RqTOULB.jpg);background-size:100%;background-repeat:no-repeat;background-attachment:fixed}")
+function changebackground(){
+    var languagestring = JSON.parse(localStorage.getItem('duo.state')).user.learningLanguage || JSON.parse(GM.getValue('duo.state')).user.learningLanguage || window.location.pathname.split("/").slice( 2, 3 ).join("/");
 	var backgroundurl = "notset";
     switch(languagestring){
         case "da":
@@ -126,9 +127,23 @@ var languagestring = JSON.parse(localStorage.getItem('duo.state')).user.learning
 			backgroundurl = "http://i.imgur.com/3KI66sY.jpg";
             break;
     }
-  GM_addStyle(".gr__duolingo_com, body, body:first-child, ._3MLiB, ._3giip, ._3PBCS{background:url("+backgroundurl+");background-size:100%;background-repeat:no-repeat;background-attachment:fixed}")
+    GM_addStyle(".gr__duolingo_com, body, body:first-child, ._3MLiB, ._3giip, ._3PBCS{background:url("+backgroundurl+");background-size:100%;background-repeat:no-repeat;background-attachment:fixed}")
 //GM_addStyle("._3giip, ._3PBCS{background:url(http://i.imgur.com/RqTOULB.jpg);background-size:100%;background-repeat:no-repeat;background-attachment:fixed}")
 //
+//footer
+//GM_addStyle("._3GXmV, ._1sntG{background:none");
+GM_addStyle("._3GXmV{background:none"); //_3uFh7 _3BtZs _1sntG
+  //nvm on this one, short flags don't fill to bottom
+//home page underfooter with wide window: <div data-reactroot="">
+GM_addStyle("body div div("+backgroundurl+");background-size:100%;background-repeat:no-repeat;background-attachment:fixed}");
+}
+changebackground();
+//change background on language select?
+//$('_3gtu3 _1-Eux iDKFi').click(function(){alert("hi")});
+window.setInterval(function(){
+  changebackground();
+}, 60000);
+
 GM_addStyle(".nav-footer{text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF");
 //GM_addStyle(".nav-footer a{color:white");
     //$("#app").css("background", "url('http://i.imgur.com/W6psVNL.png') no-repeat bottom center fixed");
@@ -138,15 +153,10 @@ GM_addStyle("._1Zqmf{text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF, 1px -1px 0 #F
 GM_addStyle("._38VWB{text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF");
 //beginner card
 GM_addStyle(".a-Y8L{text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF");
-//footer
-//GM_addStyle("._3GXmV, ._1sntG{background:none");
-GM_addStyle("._3GXmV{background:none"); //_3uFh7 _3BtZs _1sntG
+
 //mark all correct answers
 GM_addStyle(".maOx8, ._2hYEZ{text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF");
 
-//nvm on this one, short flags don't fill to bottom
-//home page underfooter with wide window: <div data-reactroot="">
-GM_addStyle("body div div("+backgroundurl+");background-size:100%;background-repeat:no-repeat;background-attachment:fixed}")
 //multiple select the word question text
 GM_addStyle(".oR3Zt{text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF");
 //lesson complete ._26pCf / XP earned ._3jPAB / combo bonus _26pCf / XP _3jPAB
